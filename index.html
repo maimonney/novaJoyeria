@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Programación I | Parcial 2 | Ayala, Daiana | Monney, Mailen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/@vectopus/atlas-icons/style.css">
+
+        <link rel="stylesheet" href="estilo.css" />
+    </head>
+    <body>
+        <header>
+            <div class="alumnas"><h1>Programación I | Parcial 2 | Ayala, Daiana | Monney, Mailen</h1></div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                
+                 <h2> <a class="navbar-brand" href="index.html">Nova</a> </h2>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#banner">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#informacion">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#producto">Productos</a>
+                      </li> 
+                    </ul>
+                
+                </div>
+                <div class="carrito">
+
+                  <!-- Ventana modal Carrito-->
+                  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="40" height="40" color="#C39C57"><defs><style>.cls-6374f8d9b67f094e4896c663-1 {fill:none;stroke:currentColor;stroke-miterlimit:10;} </style></defs><path class="cls-6374f8d9b67f094e4896c663-1" d="M3.41,7.23H20.59a0,0,0,0,1,0,0V19.64a2.86,2.86,0,0,1-2.86,2.86H6.27a2.86,2.86,0,0,1-2.86-2.86V7.23A0,0,0,0,1,3.41,7.23Z"></path><path class="cls-6374f8d9b67f094e4896c663-1" d="M7.23,10.09V6.27A4.77,4.77,0,0,1,12,1.5h0a4.77,4.77,0,0,1,4.77,4.77v3.82"></path></svg></button>
+              </div>
+              </div>
+              </nav>
+        </header>
+        <main>
+          <section id="banner">
+            
+          </section>
+
+            <section id="informacion">
+              <h2 class="fw-bold text-center">Nova</h2>
+        
+              <div class="container">
+                <div class="row">
+                  <img src="img/nosotros.png" alt="Imagen ilustrativa de una tienda de libros"
+                    class="col-sm-4 img-fluid h-100">
+                  <div class="col-sm-8">
+                    <h3 class="fw-bold text-left">Sobre nosotros</h3>
+                    <p>
+                      Nova es una tienda online dedicada a la venta de joyería única. En Nova, nos apasiona guiar a los amantes de la moda hacia el maravilloso mundo de los accesorios brillantes. Nuestra tienda en línea está enfocada en ofrecer una amplia selección de bijouterie que abarca desde piezas elegantes hasta diseños más atrevidos y modernos.
+                    </p>
+                    <p>
+                      En Nova, encontrarás el destino perfecto para inspirarte y descubrir nuevas formas de realzar tu estilo entre las páginas de nuestro catálogo. Nuestro objetivo principal en Nova es fomentar la pasión por la joyería, ofreciendo una amplia selección de piezas exclusivas.
+                    </p>
+                    <p>
+                      Nos guiamos por valores fundamentales como la creatividad en el diseño, la promoción de la diversidad e inclusión, y la búsqueda constante de calidad en nuestra selección de bijouterie.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+
+          </section>
+          
+
+            <section class="catalogo_producto" id="producto">
+              <h2>  Productos</h2>
+
+            <div class="contenedor_carrito">
+              <div>
+                <p class="filtros">
+                  Filtros: 
+                  <a href="#" data-cat="Aros">Aros</a>
+                  <a href="#" data-cat="Anillo">Anillos</a>
+                  <a href="#" data-cat="Collar">Collares</a>
+                  <a href="#" id="limpiarFiltros">Limpiar</a>
+                </p>
+              </div>
+
+              <div class="carrito_borrar">
+                <p> Detalles del carrito:</p>
+                <p id="info-carrito"></p>
+                <button id="reset"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24" color="#C39C57"><defs><style>.cls-6374f8d9b67f094e4896c66b-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><path class="cls-6374f8d9b67f094e4896c66b-1" d="M16.88,22.5H7.12a1.9,1.9,0,0,1-1.9-1.8L4.36,5.32H19.64L18.78,20.7A1.9,1.9,0,0,1,16.88,22.5Z"></path><line class="cls-6374f8d9b67f094e4896c66b-1" x1="2.45" y1="5.32" x2="21.55" y2="5.32"></line><path class="cls-6374f8d9b67f094e4896c66b-1" d="M10.09,1.5h3.82a1.91,1.91,0,0,1,1.91,1.91V5.32a0,0,0,0,1,0,0H8.18a0,0,0,0,1,0,0V3.41A1.91,1.91,0,0,1,10.09,1.5Z"></path><line class="cls-6374f8d9b67f094e4896c66b-1" x1="12" y1="8.18" x2="12" y2="19.64"></line><line class="cls-6374f8d9b67f094e4896c66b-1" x1="15.82" y1="8.18" x2="15.82" y2="19.64"></line><line class="cls-6374f8d9b67f094e4896c66b-1" x1="8.18" y1="8.18" x2="8.18" y2="19.64"></line></svg></button>            
+              </div>
+            </div>
+
+            <div id="catalogo">
+                <!-- Aca se muestra la información de los productos -->
+            </div>
+              
+             <!--Modal carrito-->
+             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                  <h3 class="offcanvas-title" id="offcanvasRightLabel">Vista del carrito</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" id="carritoContenido"></div>
+              </div>
+              </section>
+
+<!-- Modal agradecimiento de compra -->
+<div class="modal fade" id="modalProductosAgregados" tabindex="-1" aria-labelledby="graciasModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="graciasModalLabel">¡Gracias por tu compra!</h2>
+        <button type="button" class="cerrarbtn" data-bs-dismiss="modal" aria-label="Close">x</button>
+      </div>
+      <div class="modal-body" id="productosAgregadosBody">
+        <!-- Contenido del modal -->
+      </div>
+    </div>
+  </div>
+</div>
+
+              
+        </main>
+        <footer>
+            <ul>
+                <li>Profesor victor villafane</li>
+                <li>
+                    <a href="mailto:victor.villafane@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">victor.villafane@davinci.edu.ar</a>
+                </li>
+                <li>Programación 1</li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <script src="parcial.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
