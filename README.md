@@ -33,3 +33,4 @@
 - `parcial.js`: Lógica para la interacción con el carrito y el catálogo.
 - `favicon.ico`: Ícono de la página.
 
+
